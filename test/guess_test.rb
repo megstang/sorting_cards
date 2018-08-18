@@ -17,7 +17,6 @@ class GuessTest < Minitest::Test
   end
 
   def test_it_can_respond
-    skip
     card = Card.new("10", "Hearts")
     guess = Guess.new("10 of Hearts", card)
     assert_equal "10 of Hearts", guess.response
@@ -30,7 +29,6 @@ class GuessTest < Minitest::Test
   end
 
   def test_it_can_give_feedback
-    skip
     card = Card.new("10", "Hearts")
     guess = Guess.new("10 of Hearts", card)
     assert_equal "Correct!", guess.feedback
