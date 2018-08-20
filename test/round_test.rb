@@ -50,9 +50,11 @@ class RoundTest < Minitest::Test
   end
 
   def test_it_can_count_how_many_correct
+
   end
 
   def test_it_can_calculate_percent_correct
+    skip
   end
 
 
