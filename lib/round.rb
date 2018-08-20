@@ -1,10 +1,3 @@
-require 'pry'
-require './lib/guess'
-require './lib/card'
-require './lib/deck'
-require './lib/round'
-
-
 class Round
   attr_reader :deck,
               :guesses,
@@ -41,4 +34,3 @@ class Round
   end
 
 end
-binding.pry

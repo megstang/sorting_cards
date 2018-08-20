@@ -43,13 +43,21 @@ class RoundTest < Minitest::Test
     card_2 = Card.new("4", "Clubs")
     deck = Deck.new([card_1, card_2])
     round = Round.new(deck)
-    guess = Guess.new("3 of Hearts",card_1)
+    # guess = Guess.new("3 of Hearts",card_1)
     assert_instance_of Guess, round.record_guess({value: "3", suit: "Hearts"})
     assert_equal "3 of Hearts", round.guesses.last.response
 
   end
 
   def test_it_can_count_how_many_correct
+    card_1 = Card.new("3","Hearts")
+    card_2 = Card.new("4", "Clubs")
+    deck = Deck.new([card_1, card_2])
+    round = Round.new(deck)
+    # guess = Guess.new("3 of Hearts",card_1)
+    round.record_guess({value: "3", suit: "Hearts"})
+    round.record_guess({value: "Jack", suit: "Diamonds"})
+    assert_equal 1, round.number_correct
 
   end
 
