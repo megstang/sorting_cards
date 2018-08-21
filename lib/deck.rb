@@ -1,6 +1,9 @@
 
 class Deck
-  attr_reader :cards, :count, :sort
+  attr_reader :cards,
+              :count,
+              :sort
+
   def initialize (cards)
     @cards = cards
   end
@@ -12,7 +15,7 @@ class Deck
   def sort
     return @cards if count <= 1
     swap = true
-      while swap #put condition with while while swap ==true, when swap becomes false it will break out of hte loop
+      while swap 
         swap = false
         (count - 1).times do |i|
           if @cards[i].numeric_value == @cards[i + 1].numeric_value && @cards[i].numeric_suit > @cards[i+1].numeric_suit
