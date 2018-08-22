@@ -22,7 +22,8 @@ class Round
   def record_guess(response_hash)
     guess_string = "#{response_hash[:value]} of #{response_hash[:suit]}"
     @guesses << Guess.new(guess_string,current_card)
-    if response_hash[:value] == current_card.value && response_hash[:suit] == current_card.suit
+    if response_hash[:value] == current_card.value &&
+      response_hash[:suit] == current_card.suit
       @number_correct += 1
     end
     @current_card_index += 1
