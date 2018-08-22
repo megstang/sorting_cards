@@ -2,8 +2,6 @@
 class Round
   attr_reader :deck,
               :guesses,
-              :current_card,
-              :record_guess,
               :number_correct,
               :current_card_index,
               :percent_correct
