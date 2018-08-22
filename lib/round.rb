@@ -5,7 +5,7 @@ class Round
               :current_card,
               :record_guess,
               :number_correct,
-              :current_card_index
+              :current_card_index,
               :percent_correct
 
   def initialize(deck)
