@@ -1,7 +1,6 @@
 
 class Guess
   attr_reader :card,
-              :feedback,
               :response
 
   def initialize (response, card)

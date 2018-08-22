@@ -1,7 +1,6 @@
 
 class Deck
   attr_reader :cards,
-              :count,
               :sort
 
   def initialize (cards)
