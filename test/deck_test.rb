@@ -6,7 +6,6 @@ require './lib/deck'
 
 class DeckTest < Minitest::Test
   def test_it_exists
-
     card_1 = Card.new("3","Hearts")
     card_2 = Card.new("4", "Clubs")
     card_3 = Card.new("5", "Diamonds")
@@ -15,7 +14,6 @@ class DeckTest < Minitest::Test
   end
 
   def test_it_can_list_cards
-
     card_1 = Card.new("3","Hearts")
     card_2 = Card.new("4", "Clubs")
     card_3 = Card.new("5", "Diamonds")
